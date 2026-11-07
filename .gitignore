@@ -1,0 +1,44 @@
+﻿# Python environments and caches
+venv/
+.venv/
+env/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_cache*/
+pytest-cache-files-*/
+.phase9c_pytest_tmp*/
+.cache/
+.cache-*/
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Scratch files and generated outputs
+tmp/
+outputs/
+results/test_runs/
+*.tmp
+*.temp
+*.swp
+*~
+
+# Source datasets and data-derived exports are private by default
+*.csv
+!examples/synthetic_data/*.csv
+!analysis/phase2_kpi_results.csv
+!results/synthetic_demo/*.csv
+
+# Direct-submission artifacts are excluded
+submission/*.pdf
+submission/*.docx
+
+# Private instructions and assessment source material
+/AGENTS.md
+/problem_statement/

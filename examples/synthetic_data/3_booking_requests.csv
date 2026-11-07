@@ -1,0 +1,5 @@
+id,faculty_form_id,invoice_id,user_id,student_id,class_id,educator_id,classbatch_id,sessions_count,is_renewal,continue_same_batch,preferred_days,preferred_time,request_status,batch_allocated,allocated_by,allocated_at,created_at,updated_at,deleted_at
+SYN-REQ-001,SYN-FORM-001,SYN-INV-001,SYN-USER-001,SYN-STU-001,SYN-CLASS-001,SYN-EDU-001,SYN-BATCH-001,24,Yes,Yes,"Mon,Wed",10:00,Completed,Yes,SYNTHETIC-OPS,,2026-10-01 11:00:00,2026-10-01 11:30:00,
+SYN-REQ-002,SYN-FORM-002,SYN-INV-002,SYN-USER-002,SYN-STU-002,SYN-CLASS-002,SYN-EDU-002,,24,Yes,No,"Mon,Wed",10:00,Pending_Batch_Allocation,No,,,2026-10-02 11:00:00,2026-10-02 11:30:00,
+SYN-REQ-005,SYN-FORM-005,SYN-INV-005,SYN-USER-005,SYN-STU-005,SYN-CLASS-005,SYN-EDU-005,SYN-BATCH-FULL,24,Yes,Yes,"Mon,Wed",10:00,Failed_Batch_Full,No,,,2026-10-03 11:00:00,2026-10-03 11:30:00,
+SYN-REQ-007,SYN-FORM-007,SYN-INV-007,SYN-USER-007,SYN-STU-007,SYN-CLASS-007,SYN-EDU-007,,24,Yes,No,"Mon,Wed",10:00,Awaiting_Parent_Batch_Selection,No,,,2026-10-04 11:00:00,2026-10-04 11:30:00,

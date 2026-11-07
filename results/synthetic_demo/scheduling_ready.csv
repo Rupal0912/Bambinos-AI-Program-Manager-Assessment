@@ -1,0 +1,1 @@
+﻿readiness_id,case_id,decision_id,invoice_id,teacher_form_id,booking_request_id,student_id,user_id,class_id,educator_id,classbatch_id,schedule_instance_key,class_date,start_time,end_time,timezone,payment_evidence_id,parent_choice_evidence_id,capacity_evidence_id,seat_hold_id,verified_settled_amount,currency,policy_version,evaluated_at_utc,input_snapshot_sha256

@@ -1,0 +1,54 @@
+{
+  "policy_version": "phase4-prototype-1.0",
+  "mode": "PROTOTYPE_ONLY",
+  "auto_approval_enabled": false,
+  "eligibility": {
+    "renewal_value": "Yes",
+    "paid_statuses": ["Paid"]
+  },
+  "payment": {
+    "partial_statuses": ["Partially_Paid"],
+    "failed_statuses": ["Failed"],
+    "form_amount_field": "amount_paid",
+    "invoice_comparison_field": "net_amount",
+    "settled_amount_field": "gateway_settled_amount",
+    "settled_currency_field": "gateway_settled_currency",
+    "evidence_id_field": "payment_evidence_id",
+    "evidence_source_field": "payment_evidence_source",
+    "allowed_evidence_sources": [],
+    "amount_tolerance": 0,
+    "amount_rule_status": "PROVISIONAL_REQUIRES_FINANCE_SIGNOFF"
+  },
+  "identity_fields": ["student_id", "user_id", "class_id", "educator_id"],
+  "reference_capacity_authoritative": false,
+  "auto_approval_gates": {
+    "payment_verified_field": "gateway_verified",
+    "parent_choice_confirmed_field": "parent_batch_choice_confirmed",
+    "student_active_field": "student_active",
+    "require_authoritative_capacity": true,
+    "require_capacity_confirmation": true,
+    "note": "The provided CSVs do not include gateway verification, explicit parent choice confirmation, student_active, or live seat-hold evidence. These must be supplied by trusted sources before enabling automatic approval."
+  },
+  "stage_readiness": {
+    "booking_request": {
+      "parent_choice_evidence_id_field": "parent_choice_evidence_id"
+    },
+    "scheduling": {
+      "schedule_ready_request_statuses": [],
+      "parameters_verified_field": "schedule_parameters_verified",
+      "parameters_evidence_id_field": "schedule_parameters_evidence_id",
+      "required_schedule_fields": [
+        "class_id", "educator_id", "classbatch_id", "class_date", "start_time", "end_time", "timezone"
+      ],
+      "note": "No production request state or schedule parameter schema is approved. Readiness remains unavailable until business owners configure these rules and provide authoritative evidence."
+    }
+  },
+  "hard_block_reason_codes": ["PAYMENT_FAILED", "FORM_INVOICE_ID_NOT_FOUND", "REQUEST_INVOICE_ID_NOT_FOUND"],
+  "output_policy": {
+    "prototype_only": true,
+    "create_booking_records": false,
+    "create_schedule_records": false,
+    "send_notifications": false,
+    "interpret_null_deleted_at_as_active": false
+  }
+}
