@@ -71,7 +71,7 @@ Business rules for payment source of truth, partial payment, amount semantics, s
 - **B — Workflow redesign and exception handling:** `analysis/phase3_*`.
 - **C — Reconciliation prototype:** `src/`, `config/`, `tests/`, and the run instructions above.
 - **D — Dashboard, SOP, and rollout plan:** `dashboard/`, `documentation/phase6_dashboard_explanation.md`, `documentation/phase7_renewal_operations_sop.md`, and `documentation/phase8_30_60_90_day_rollout_plan.md`.
-- **Case report:** [`submission/Bambinos_AI_Program_Manager_Assessment_Report_Public.pdf`](submission/Bambinos_AI_Program_Manager_Assessment_Report_Public.pdf).
+- **Case report:** The 13-page assessment report is submitted separately as a PDF. It is intentionally not included in this public repository.
 
 The assessment brief is available from the [official Bambinos assessment repository](https://github.com/bambinoslive/AI-PM-hiring-take-home-assignments); the brief PDF is not redistributed here.
 
